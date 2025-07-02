@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        img {
+            display: none;
+            width: 300px;
+            height: auto;
+            
+        }
+        h1{
+            color: rgb(233, 61, 3);
+        }
+        body{
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>ANIMATION</h1>
+        <img src="1.png" alt="">
+        <img src="2.png" alt="">
+        <img src="3.png" alt="">
+        <img src="4.png" alt="">
+        <img src="5.png" alt="">
+        <img src="6.png" alt="">
+        <img src="7.png" alt="">
+        <img src="8.png" alt="">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            let curr_index = 0;
+            let images = $("img");
+            let total = images.length;
+
+            function runAnimation() {
+                images.hide();                    
+                images.eq(curr_index).show(); 
+                curr_index = (curr_index + 1) % total;  
+            }
+
+            runAnimation();  
+            setInterval(runAnimation, 100);  
+        });
+    </script>
+
+</body>
+</html>
