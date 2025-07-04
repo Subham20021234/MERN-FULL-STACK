@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+
+        <style>
+            .carousel-img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .spk-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+    
+        }
+        .spk-img:hover {
+    transform: scale(1.2); 
+    }
+
+        </style>
+
+</head>
+
+<body >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-microchip me-2"></i> TechConf 2025
+        </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#speakers">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#register">Register</a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+            <img src="3.avif" class="d-block w-100 carousel-img" alt="Tech Image">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Welcome to TechConf 2025</h1>
+                <p>Where Innovation Meets Future</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="2.jpg" class="d-block w-100 carousel-img" alt="Hackathon">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Join Top Industry Experts</h1>
+                <p>Gain insights from world-class speakers</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- BANNER -->
+<div class="bg-dark text-white d-flex align-items-center" style="height: 300px;">
+    <div class="container text-center">
+        <h1 class="display-4">Join TechConf 2025</h1>
+        
+        <p class="lead">Explore the future with global innovators <i class="fas fa-rocket text-warning me-2"></i></p>
+        <a href="#register" class="btn btn-primary btn-lg mt-3">Register Now</a>
+    </div>
+</div>
+
+    <!-- About -->
+    <section id="about" class="py-3 pb-5 text-center bg-dark text-white">
+        <div class="container">
+            <h2>About the Conference</h2>
+            <p class="lead">
+    TechConf 2025 brings together technology leaders, developers, and innovators to share insights, trends, and networking opportunities.
+    <br>
+<div class="mt-4">
+    <p><i class="fas fa-robot text-primary me-2"></i> Artificial Intelligence & Machine Learning</p>
+    <p><i class="fas fa-cloud text-info me-2"></i> Cloud Computing & DevOps</p>
+    <p><i class="fas fa-database text-success me-2"></i> Data Engineering & Big Data</p>
+    <p><i class="fas fa-globe text-danger me-2"></i> Web 3.0 & Blockchain</p>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Speakers -->
+    <section id="speakers" class="py-5 text-center bg-dark text-white">
+        <div class="container">
+            <h2>Meet the Speakers</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="nv2.webp" class=" spk-img rounded-circle mb-2 ">
+                    <h5>Jensen Huang</h5>
+                    <p>CEO of NVIDIA</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="jp2.webp" class=" spk-img  rounded-circle mb-2 ">
+                    <h5>Andy Jassy</h5>
+                    <p>Founder of AWS</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="openai.jpg" class=" spk-img rounded-circle mb-2 ">
+                    <h5>Sam Altman</h5>
+                    <p>Founder, OpenAI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+   <section id="register" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Register Now</h2>
+        
+        <div class="card shadow-lg border-0 col-md-6 offset-md-3 p-4">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Organization</label>
+                    <input type="text" class="form-control" placeholder="Your company or institution">
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Register</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 Enginners Mind. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
