@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-image: url('1.jpg');
+    background-size: cover;       /* Makes image cover full screen */
+    background-position: center;  /* Keeps image centered */
+    background-repeat: no-repeat; /* Prevents tiling */
+    height: 100vh;                /* Full height of viewport */
+}'
+
+
+
+full screen background image 
+
+
+
+**********************************************************************************
+
+
+div {
+    height: 100vh;                 /* Full screen height */
+    width: 100vw;                  /* Full screen width */
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* So text is visible on the image */
+}
+
+specific containers 
+

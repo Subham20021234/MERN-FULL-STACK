@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQEURY MINI PROJECT</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .image:hover {
+            transform: scale(1.4);
+            transition: 0.3s ease-in-out;
+            
+        }
+
+        .dark-theme {
+            background: #111;
+            color: #eee;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            margin: 10px;
+            display: none;
+        }
+        .slider img {display: none;} 
+        .slider img:first-child{
+            display: block;
+        }  
+    </style>
+</head>
+<body>
+    <h2>1. Hide Paragraph</h2>
+    <button id="toggleBtn">Toggle Paragraph</button>
+    <p id="myPara">This is a paragraph to toggle.</p>
+
+    <h2>2. Live Character Counter</h2>
+    <textarea id="message" rows="3"></textarea>
+    <p id="counter">0 characters</p>
+
+    <h2>3. Accordion</h2>
+    <div class="accordion">
+        <h3 class="accordion-header">Click Me</h3>
+        <div class="accordion-body">This is the hidden content.</div>
+    </div>
+
+    <div class="container">
+        <h2>4. Image Hover Zoom</h2>
+        <img src="1.png" class="image" alt="Zoom Image" height="100px">
+    </div>
+    
+
+    <h2>5. Theme Toggle</h2>
+    <button id="themeToggle">Toggle Theme</button>
+
+    <h2>6. Scroll to Top</h2>
+    <div style="height: 300px;">Scroll down to see the button.</div>
+    <button id="topBtn">Top</button>
+
+    <h2>7. Fade In/Out</h2>
+    <button id="fadeBtn">Toggle Box</button>
+    <div class="box"></div>
+
+    <h2>8. Real-Time Input Preview</h2>
+    <input type="text" id="nameInput">
+    <p id="preview"></p>
+
+    <h2>9. Image Slider</h2>
+    <div class="slider">
+        <img src="3.png" height="100px">
+        <img src="4.png" height="100px">
+        <img src="https://images.pexels.com/photos/20409358/pexels-photo-20409358.jpeg" alt="NO IMAGE" height="100px">
+    </div>
+    <button id="next">Next</button>
+    <button id="previous">previous</button>
+
+    <h2>10. Form Validation</h2>
+    <form id="Form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        $(document).ready(function () {
+            $("#toggleBtn").click(function () {
+                $("#myPara").slideToggle();
+            });
+
+            
+            $("#message").on("input", function () {
+                $("#counter").text(this.value.length + " characters");
+            });
+
+
+            $(".accordion-header").click(function () {
+                $(this).next().slideToggle();
+            });
+
+
+            $("#themeToggle").click(function () {
+                $("body").toggleClass("dark-theme");
+            });
+
+
+            $(window).scroll(function () {
+                $("#topBtn").toggle($(this).scrollTop() > 100);
+            });
+            $("#topBtn").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 500);
+            });
+
+
+            $("#fadeBtn").click(function () {
+                $(".box").fadeToggle();
+            });
+
+
+            $("#nameInput").on("input", function() {
+            $("#preview").text($(this).val());
+            });
+
+
+            let index = 0;
+            const images = $(".slider img")
+            $("#next").click(function(){
+                images.eq(index).hide()
+                index = (index+1) %images.length
+                images.eq(index).show();
+            })
+            $("#previous").click(function () {
+                images.eq(index).hide();
+                index = (index - 1 + images.length) % images.length; 
+                images.eq(index).show();
+
+            }); 
+        }); 
+    </script>
+</body>
+
+</html>

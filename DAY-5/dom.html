@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Demo</title>
+</head>
+<body>
+
+  <h1 id="main-title">Welcome</h1>
+  <button id="change">Click Me</button>
+
+  <script>
+    const btn = document.getElementById("change");
+    const heading = document.getElementById("main-title");
+
+    btn.addEventListener("click", function() {
+      heading.innerText = "You clicked the button!";
+      heading.style.color = "blue";
+    });
+  </script>
+
+</body>
+</html>

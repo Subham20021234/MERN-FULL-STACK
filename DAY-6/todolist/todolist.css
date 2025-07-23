@@ -1,0 +1,59 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  margin: 10px;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+h1 {
+  color: purple;
+  margin-bottom: 2px;
+}
+
+#taskInput {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#addTaskButton {
+  padding: 10px 20px;
+  background-color: purple;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#addTaskButton:hover {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: circle;
+}
+
+li button {
+  background-color: #ef051c;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}

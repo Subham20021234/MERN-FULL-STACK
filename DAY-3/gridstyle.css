@@ -1,0 +1,20 @@
+.parent {
+    border: 2px solid;
+    grid-template-columns: 100px 100px 50px; */
+    /* grid-template-rows: repeat(10, 40px); */
+    /* grid-template: 10px 50px 20px 40px 100px 200px 300px;
+
+    grid-template-columns: 1fr 2fr 3fr;
+
+    /* 
+    1000px
+    1fr --> 200px
+    3fr --> 600px
+    1fr --> 200px
+    1000 / 5 => 200px
+    */
+
+    /* gap: 10px; */
+    /* row-gap: 10px; */
+    column-gap: 10px;
+}

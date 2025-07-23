@@ -1,0 +1,28 @@
+/* p{
+    display: none;
+}
+.dropdown:hover p{
+    color: blueviolet;
+    display: block;
+
+    
+} */
+
+.parent{
+    border:2px solid;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* flex-flow: wrap; */
+    /* justify-content:center; */
+    align-items:center;
+    justify-content: center;
+    
+}
+.child{
+    border: 2px solid;
+    height: 20px;
+    padding: 40px;
+    
+    
+}

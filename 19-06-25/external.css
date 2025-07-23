@@ -1,0 +1,49 @@
+/* h1{
+    color: beige;
+    height: auto;
+    background-color:rgba(119, 139, 119,0.5);
+    border: 5px solid;
+    border-color:black;
+    background-image:url(1.jpg);
+    
+    
+} */
+/* div{
+    text-align: center;
+    background-image: url(1.jpg);
+    height: 1000px;
+    width: 500px;
+    
+} */
+/* external.css */
+
+
+div {
+    height: 100vh;                 /* Full screen height */
+    width: 100vw;                  /* Full screen width */
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* So text is visible on the image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

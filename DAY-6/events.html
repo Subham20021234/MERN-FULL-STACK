@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <script>
+  const heading = document.getElementById("heading");
+  const image = document.getElementById("anime");
+
+  image.addEventListener("mousemove", function () {
+    console.log("Mouse moved over the image!");
+    heading.style.color = "red";
+  });
+</script>
+
+</head>
+<body>
+    <h2 id="heading">AMAZING IMAGES</h2>
+    <div id="container">
+        <ul>
+        <li><img src="1.png" alt="no image" width="300" height="300" id="anime"></li>
+        <li><img src="3.png" alt="no image" width="300" height="300" id="anime"></li>
+         
+        <li><img src="4.png" alt="no image" width="300" height="300" id="anime"></li>
+         
+        </ul>
+       
+    </div>
+</body>
+</html>
